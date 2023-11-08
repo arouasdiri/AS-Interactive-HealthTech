@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>738</height>
+   </rect>
+  </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 14pt &quot;Liberation Serif&quot;;</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox_pInfo">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>150</y>
+     <width>591</width>
+     <height>491</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Liberation Serif</family>
+     <pointsize>14</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="title">
+    <string>Patientinformationen</string>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>571</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_firstname">
+       <property name="text">
+        <string>Vorname:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLineEdit" name="lineEdit_firstname"/>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLineEdit" name="lineEdit_emergency"/>
+     </item>
+     <item row="2" column="1">
+      <widget class="QDateEdit" name="dateEdit_birthdate"/>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="lineEdit_lastname"/>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLabel" name="label_patientid">
+       <property name="text">
+        <string>Versicherungs-ID des Patienten:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_scheduledate">
+       <property name="text">
+        <string>geplantes Operationsdatum:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="label_lastname">
+       <property name="text">
+        <string>Nachname:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+<widget class="QGroupBox" name="groupBox_gender">
+    <property name="flat">
+        <bool>true</bool>
+    </property>
+    <property name="checkable">
+        <bool>false</bool>
+    </property>
+    <property name="alignment">
+        <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_gender">
+        <item>
+            <widget class="QRadioButton" name="radioButton_male">
+                <property name="text">
+                    <string>Männlich</string>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">QRadioButton {
+    font: 12pt "Liberation Serif"; /* Kleinere Schriftgröße */
+    color: #333;
+    padding: 5px;
+}
+
+QRadioButton::indicator {
+    width: 12px;
+    height: 12px;
+}
+
+QRadioButton::indicator::unchecked {
+    border: 2px solid #aaa;
+    border-radius: 6px;
+}
+
+QRadioButton::indicator::checked {
+    border: 2px solid #21a1c0;
+    background-color: #21a1c0;
+    border-radius: 6px;
+}</string>
+                </property>
+            </widget>
+        </item>
+        <item>
+            <widget class="QRadioButton" name="radioButton_female">
+                <property name="text">
+                    <string>Weiblich</string>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">QRadioButton {
+    font: 12pt "Liberation Serif"; /* Kleinere Schriftgröße */
+    color: #333;
+    padding: 5px;
+}
+
+QRadioButton::indicator {
+    width: 12px;
+    height: 12px;
+}
+
+QRadioButton::indicator::unchecked {
+    border: 2px solid #aaa;
+    border-radius: 6px;
+}
+
+QRadioButton::indicator::checked {
+    border: 2px solid #21a1c0;
+    background-color: #21a1c0;
+    border-radius: 6px;
+}</string>
+                </property>
+            </widget>
+        </item>
+        <item>
+            <widget class="QRadioButton" name="radioButton_divers">
+                <property name="text">
+                    <string>Divers</string>
+                </property>
+                <property name="styleSheet">
+                    <string notr="true">QRadioButton {
+    font: 12pt "Liberation Serif"; /* Kleinere Schriftgröße */
+    color: #333;
+    padding: 5px;
+}
+
+QRadioButton::indicator {
+    width: 12px;
+    height: 12px;
+}
+
+QRadioButton::indicator::unchecked {
+    border: 2px solid #aaa;
+    border-radius: 6px;
+}
+
+QRadioButton::indicator::checked {
+    border: 2px solid #21a1c0;
+    background-color: #21a1c0;
+    border-radius: 6px;
+}</string>
+                </property>
+            </widget>
+        </item>
+    </layout>
+</widget>
+
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_birthdate">
+       <property name="text">
+        <string>Geburtsdatum:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QDateEdit" name="dateEdit_scheduledate"/>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLineEdit" name="lineEdit_patientid"/>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_emergency">
+       <property name="text">
+        <string>Notfallkontaktinformationen:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLabel" name="label_notes">
+       <property name="text">
+        <string>Notizen:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QLineEdit" name="lineEdit_notes"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_birthdate_2">
+       <property name="text">
+        <string>Geschlecht:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButton_firstsave">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>660</y>
+     <width>331</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Liberation Serif</family>
+     <pointsize>14</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: white;
+    border: 2px solid #555;
+    border-radius: 20px;
+    border-style: outset;
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #fff, stop: 1 #888
+        );
+    padding: 5px;
+    }
+
+QPushButton:hover {
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #fff, stop: 1 #bbb
+        );
+    }
+
+QPushButton:pressed {
+    border-style: inset;
+    background: qradialgradient(
+        cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+        radius: 1.35, stop: 0 #fff, stop: 1 #ddd
+        );
+    }</string>
+   </property>
+   <property name="text">
+    <string>Weiter</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="flabel_nDiameter_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>720</y>
+     <width>491</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 8pt &quot;Ubuntu&quot;;</string>
+   </property>
+   <property name="text">
+    <string>© 2023 AS Interactive HealthTech. Alle Rechte vorbehalten.</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>0</y>
+     <width>241</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>logo.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="flabel_heading">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>591</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>85</red>
+         <green>170</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>85</red>
+         <green>170</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>190</red>
+         <green>190</green>
+         <blue>190</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
+   <property name="font">
+    <font>
+     <family>Liberation Serif</family>
+     <pointsize>20</pointsize>
+     <weight>3</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 25 20pt &quot;Liberation Serif&quot;
+</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#21a1c0;&quot;&gt;Erfassung der Patienteninformationen&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
